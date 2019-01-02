@@ -1,10 +1,15 @@
 
-def collect (arg)
+def my_collect (arg)
   array = []
   counter = 0 
-  while counter < 10 
-    array.push puts "This is is the #{count} and this is the #{arg}."
+  if arg.length == 0
+    y = "No Arguments Here!"
+    arg.push(y)
+  end
+  while counter < 5 
+    x = puts "This is is the #{counter} and this is the #{arg}."
+    array.push(x)
+    counter += 1 
     end 
-    yield(array)
-  
+  yield(array)
 end 
