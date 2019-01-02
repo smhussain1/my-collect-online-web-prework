@@ -7,9 +7,10 @@ def my_collect (arg)
     arg.push(y)
   end
   while counter < arg.length 
-    x = puts "This is is the #{counter} and this is the #{arg}."
+    
     array.push(x)
     counter += 1 
     end 
   yield(array)
 end 
+# x = puts "This is is the #{counter} and this is the #{arg}."
