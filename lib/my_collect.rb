@@ -6,7 +6,7 @@ def my_collect (arg)
     y = "No Arguments Here!"
     arg.push(y)
   end
-  while counter < 5 
+  while counter < arg.length 
     x = puts "This is is the #{counter} and this is the #{arg}."
     array.push(x)
     counter += 1 
