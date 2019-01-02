@@ -1,10 +1,12 @@
 
-def collect (arg)
+def my_collect (arg)
   array = []
   counter = 0 
-  while counter < 10 
-    array.push puts "This is is the #{count} and this is the #{arg}."
+ 
+  while counter < arg.length 
+    array << yield(arg[counter]) #pushes the element of the index value into  #the new empty array
+    counter += 1 
     end 
-    yield(array)
-  
+  array 
 end 
+# x = puts "This is is the #{counter} and this is the #{arg}."
