@@ -4,7 +4,7 @@ def my_collect (arg)
   counter = 0 
  
   while counter < arg.length 
-    array << yield(arg[counter])
+    array << yield(arg[counter]) #pushes the element of the index value into  #the new empty array
     counter += 1 
     end 
   
